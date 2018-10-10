@@ -4,7 +4,7 @@ const bookmarkSchema = new mongoose.Schema({
 	url: { type: String, required: true },
 	name: { type: String, required: true },
 	description: { type: String, date: Date },
-	rating: { type: number, required: true }
+	rating: { type: Number, required: true }
 });
 
 bookmarkSchema.methods.serialize = function() {
